@@ -1,5 +1,6 @@
 package main.java.ar.edu.unlam.pb2.sala;
 
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
@@ -223,7 +224,7 @@ public class Main {
     }
     
     public static void mostrarButacas(SalaCine sala) {
-    	Asiento[][] butacas = sala.getButacas();
+    	Map<String, Asiento> butacas = sala.getButacas();
     	
     	System.out.println("\n=== ESTADO DE LA SALA ===");
         if (sala.getPeliculaActual() != null) {
